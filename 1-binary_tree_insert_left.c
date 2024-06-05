@@ -18,7 +18,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	new_node = malloc(sizeof(bst_t));
 	if (new_node == NULL)
 		return (NULL);
-	if ((long long) value >= INT_MAX)
+	if (value >= INT_MAX)
 		return (NULL);
 
 	new_node->parent = parent;
@@ -37,3 +37,4 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 
 	return (new_node);
 }
+
