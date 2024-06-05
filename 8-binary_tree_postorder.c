@@ -4,7 +4,7 @@
 /**
  * binary_tree_postorder - traverses tree postorder
  * @tree: rote node of the tree
- * @func: function to perform on each node
+ * @func: function to perform on each node 
  * Return: void
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
