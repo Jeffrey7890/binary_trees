@@ -1,4 +1,3 @@
-#include <limits.h>
 #include <stdlib.h>
 #include "binary_trees.h"
 
@@ -19,7 +18,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	if (new_node == NULL)
 		return (NULL);
 
-	if (value > INT_MAX)
+	if ((long long) value >= INT_MAX)
 		return (NULL);
 
 	new_node->parent = parent;
