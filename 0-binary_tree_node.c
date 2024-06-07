@@ -18,11 +18,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	if (new_node == NULL)
 		return (NULL);
 
-<<<<<<< HEAD
-	if ((long long) value >= INT_MAX)
-=======
+
 	if (value >= INT_MAX)
->>>>>>> 9df4236bccdec5ff6c7e3da7b9fe499ad526fa3c
 		return (NULL);
 
 	new_node->parent = parent;
